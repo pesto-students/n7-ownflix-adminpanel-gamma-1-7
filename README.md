@@ -1,1 +1,1 @@
-# NINJA-TEMPLATE
+# WatchFlix React Admin Panel

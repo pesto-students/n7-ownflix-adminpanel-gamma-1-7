@@ -1,0 +1,117 @@
+.navbar-menu-wrapper {
+	.brand-logo-mini {
+		position: relative;
+		left: 40px;
+	}
+	.navbar-toggler {
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.sidebar-offcanvas.active {
+		left: 0 !important;
+		top: 0;
+
+		z-index: 1040 !important;
+		overflow: inherit;
+	}
+
+	.bk-arrow {
+		background-color: rgb(0, 0, 0);
+		font-size: 20px;
+		position: absolute;
+		right: -53px;
+		z-index: 1087;
+		display: inline-block;
+		padding: 17px;
+		color: white;
+	}
+
+	.sidebar-offcanvas {
+		left: -270px !important;
+		top: 0px !important;
+		z-index: 1040 !important;
+	}
+	.content-wrapper {
+		padding: 1.5rem 0.5rem 0 0.5rem !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.bk-arrow {
+		display: none;
+	}
+}
+
+#sidebar {
+	min-height: 100vh;
+}
+.main-panel {
+	min-height: 100vh !important;
+}
+.css-df17o1 {
+	z-index: 1100 !important;
+}
+// .css-42igfv {
+// 	margin: 25% auto !important;
+// }
+.css-df17o1 {
+	position: fixed !important;
+}
+
+.bg-form {
+	background: linear-gradient(to right, (rgb(124, 98, 172), rgb(48, 72, 177)));
+}
+.clearFixx {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.linkNew {
+		position: absolute;
+		right: 30px;
+	}
+}
+// @media (min-device-width: 992px) {
+// 	.content-wrapper {
+// 		max-width: 9% !important;
+// 	}
+// }
+.login-background {
+	background: linear-gradient(to right, #3c53d3, #354eb3);
+}
+.btn-primary {
+	color: #3c53d3 !important;
+	background-color: #ccd1f0 !important;
+	border: none !important;
+	padding: 8px 16px !important;
+	// font-weight: bo;
+}
+.btn-danger {
+	color: #e43617 !important;
+	background-color: #f0c6bf !important;
+	border: none !important;
+	padding: 8px 16px !important;
+}
+.btn-secondary {
+	color: #1f1c1c !important;
+	background-color: #d3d3d3 !important;
+	border: none !important;
+	padding: 8px 16px !important;
+}
+.page-body-wrapper.full-page-wrapper .main-panel .content-wrapper {
+	padding: 0 !important;
+}
+
+.status-card {
+	h2 {
+		color: white;
+	}
+	h3 {
+		color: white;
+	}
+	border-radius: 7px;
+	background-color: rgb(65, 119, 218);
+	padding: 20px;
+	margin: 10px 0px;
+}

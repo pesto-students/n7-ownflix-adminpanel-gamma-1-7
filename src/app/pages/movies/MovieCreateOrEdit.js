@@ -20,7 +20,7 @@ export default function MovieCreateOrEdit(props) {
 	const [director, setDirector] = useState('');
 	const [productionHouse, setProductionHouse] = useState('');
 	const [imdbRating, setImdbRating] = useState('');
-	const [runningTime, setRunningTime] = useState('');
+	const [duration, setDuration] = useState(0);
 	const [actors, setActors] = useState('');
 	const [plot, setPlot] = useState('');
 	const [rated, setRated] = useState('');
@@ -60,7 +60,7 @@ export default function MovieCreateOrEdit(props) {
 			director,
 			productionHouse,
 			imdbRating,
-			runningTime,
+			duration,
 			actors,
 			plot,
 			rated,
@@ -885,14 +885,15 @@ export default function MovieCreateOrEdit(props) {
 													<Form.Label>
 														Running
 														Time
+														(Seconds)
 													</Form.Label>
 													<Form.Control
-														type="text"
+														type="number"
 														value={
-															runningTime
+															duration
 														}
 														onChange={e =>
-															setRunningTime(
+															setDuration(
 																e
 																	.target
 																	.value

@@ -12,7 +12,7 @@ export default function EpisodeCreateOrEdit(props) {
 	const [series, setseries] = useState({});
 	const [title, setTitle] = useState('');
 	const [dateOfRelease, setDateOfRelease] = useState('');
-	const [runningTime, setRunningTime] = useState('');
+	const [duration, setDuration] = useState(0);
 	const [actors, setActors] = useState('');
 	const [plot, setPlot] = useState('');
 	const [episodeNo, setEpisodeNo] = useState('');
@@ -43,7 +43,7 @@ export default function EpisodeCreateOrEdit(props) {
 			episodeNo,
 			title,
 			dateOfRelease,
-			runningTime,
+			duration,
 			actors,
 			plot,
 			images,
@@ -621,14 +621,15 @@ export default function EpisodeCreateOrEdit(props) {
 													<Form.Label>
 														Running
 														Time
+														(Seconds)
 													</Form.Label>
 													<Form.Control
-														type="text"
+														type="number"
 														value={
-															runningTime
+															duration
 														}
 														onChange={e =>
-															setRunningTime(
+															setDuration(
 																e
 																	.target
 																	.value
